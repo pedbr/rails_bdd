@@ -2,8 +2,8 @@ Given("I visit the {string} page") do |string|
     visit root_path
   end
   
-  When("I click {string} link") do |new_article|
-    click_on(new_article)
+  When("I click {string} link") do |button|
+    click_on(button)
   end
   
   When("I fill in {string} with {string}") do |string, string2|
