@@ -14,8 +14,7 @@ Given("I visit the {string} page") do |string|
     click_on button
   end
   
-  Then("I should be on {string} page") do |string|
-    article = Article.find_by(title: page)
-    expect(current_path).to eq article_path(article)
+  Then("I should be on {string} page") do |content|
+    expect(page).to have_content content
   end
   
