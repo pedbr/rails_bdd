@@ -1,17 +1,19 @@
 <div class="container">
   <h1 class="title">EXTRA EXTRA!</h1>
 
-  <%= link_to 'New Article', new_article_path %>
+  <div class="new-article-button">
+    <%= link_to 'NEW ARTICLE', new_article_path %>
+  </div>
   
   <table>
-    <tr>
-      <th>Title</th>
+    <tr class="headers">
+      <th >Title</th>
       <th>Content</th>
-      <th></th>
+      
     </tr>
   
     <% @articles.each do |article| %>
-      <tr>
+      <tr class="display">
         <td><%= article.title %></td>
         <td><%= article.content %></td>
         <td><%= link_to 'Show', article_path(article) %></td>
