@@ -27,8 +27,71 @@ body {
     background-color: #05386B;
     width: 140px;
     height: 30px;
+    border-radius: 10px;   
+}
+
+.back-button {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #EDF5E1;
+    font-family: 'Open Sans Condensed';
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #05386B;
+    width: 140px;
+    height: 30px;
     border-radius: 10px;
-    
+}
+
+.headers {
+    background-color: #EDF5E1;
+    font-family: 'Open Sans Condensed';
+    color: #05386B;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.display{
+    background-color: #379683;
+    font-family: 'Open Sans Condensed';
+    margin-top:20px;
+    text-align:center;
+    margin-top: 100px;
+    height: 20px;
+    margin: 12px 12px 12px 12px;
+}
+
+.save-button {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #EDF5E1;
+    font-family: 'Open Sans Condensed';
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #379683;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    text-align:center;
+  }
+
+input[type=submit] {
+    background-color: #379683;
+    color: #EDF5E1;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed';
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
 }
 
 .headers {
@@ -57,6 +120,12 @@ body {
 
 .article-title {
     width: 200px;
+}
+
+.form-style {
+    margin-top: -80px;
+    text-align: center;
+    font-family: 'Open Sans Condensed';
 }
 
 table {
