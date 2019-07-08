@@ -12,3 +12,8 @@ Feature: Show articles
   Scenario: Landing page shows created articles
     Then I should see "Learning Rails 5"
     And I should see "Excited about learning a new framework"
+
+  Scenario: User can see individual article clicking in Show button
+    And I click "Show" button
+    Then I should see "Learning Rails 5"
+    And I should see "Excited about learning a new framework"
