@@ -1,35 +1,40 @@
-<h1>Edit article</h1>
- 
-<%= form_with(model: @article, local: true) do |form| %>
- 
-  <% if @article.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@article.errors.count, "error") %> prohibited
-        this article from being saved:
-      </h2>
-      <ul>
-        <% @article.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
+<div class="container">
+<h1 class="title">Edit article</h1>
+
+<div class="form-style"> 
+  <%= form_with(model: @article, local: true) do |form| %>
+  
+    <% if @article.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@article.errors.count, "error") %> prohibited
+          this article from being saved:
+        </h2>
+        <ul>
+          <% @article.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title, placeholder: 'Title' %>
+    </p>
+  
+    <p>
+      <%= form.label :content %><br>
+      <%= form.text_area :content, placeholder: 'Content' %>
+    </p>
+  
+    <p>
+      <%= form.submit %>
+    </p>
+  
   <% end %>
- 
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title, placeholder: 'Title' %>
-  </p>
- 
-  <p>
-    <%= form.label :content %><br>
-    <%= form.text_area :content, placeholder: 'Content' %>
-  </p>
- 
-  <p>
-    <%= form.submit %>
-  </p>
- 
-<% end %>
- 
-<%= link_to 'Back', articles_path %>
+</div>
+  <div class="back-button"> 
+    <%= link_to 'Back', articles_path %>
+  </div>
+</div>
