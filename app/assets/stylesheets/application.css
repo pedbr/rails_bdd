@@ -41,8 +41,36 @@ body {
 
 .display{
     background-color: #379683;
+    font-family: 'Open Sans Condensed';
     margin-top:20px;
+    text-align:center;
+    margin-top: 100px;
+    height: 20px;
+    margin: 12px 12px 12px 12px;
 }
+
+.article-button {
+    background-color: #05386B;
+    font-family: 'Open Sans Condensed';
+    width: 100px;
+}
+
+.article-title {
+    width: 200px;
+}
+
+table {
+    
+    border-radius: 1em;
+    overflow: hidden;
+    margin: 12px 12px 12px 12px;
+  }
+  
+th, td {
+    padding: 1em;
+    border-radius: 1em;
+    margin: 12px 12px 12px 12px;
+  }
 
 a:link {
     text-decoration: none;
