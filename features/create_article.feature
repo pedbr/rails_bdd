@@ -5,7 +5,7 @@ Feature: Create articles
 
   Background:
     Given I visit the "landing" page
-    When I click "New Article" link
+    When I click "NEW ARTICLE" link
 
   Scenario: Successfully create an article 
     When I fill in "Title" with "Learning Rails 5"
