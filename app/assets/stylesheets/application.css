@@ -1,3 +1,17 @@
+body {
+    /* background-color: #05386B; */
+    background-color: #5CDB95;
+}
+
+.container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
 .title {
-    margin-left: 100px;
+    color: #EDF5E1;
+    font-family: 'Bahianita';
+    font-size: 120px;
+    text-align: center;
 }
