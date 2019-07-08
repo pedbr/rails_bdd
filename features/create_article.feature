@@ -20,3 +20,8 @@ Feature: Create articles
     When I fill in "Content" with "Excited about learning a new framework"
     And I click "Save Article" button
     Then I should see "Title can't be blank"
+
+  Scenario: Publisher doesn't enter a content for the article
+    When I fill in "Title" with "Learning Rails 5"
+    And I click "Save Article" button
+    Then I should see "Content can't be blank"
