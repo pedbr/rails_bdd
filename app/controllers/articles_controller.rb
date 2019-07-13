@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:index]
+  before_action :article_owner, only: [:edit, :update, :destroy]
 
   def index
     @articles = Article.all
@@ -38,13 +39,20 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def article_owner
+    @article = Article.find(params[:id])
+    unless @article.user.id == current_user.id
+     flash[:notice] = 'Access denied as you are not owner of this article'
+     redirect_to articles_path
+    end
+   end
 
-def destroy
-  @article = Article.find(params[:id])
-  @article.destroy
- 
-  redirect_to articles_path
-end
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+  
+    redirect_to articles_path
+  end
    
   private
     def article_params
