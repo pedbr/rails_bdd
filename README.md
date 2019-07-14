@@ -35,3 +35,25 @@ The objective for this challenge was to create an Article Publishing App using R
 - Comment Article
 
 ## Visit the deployed app at: https://secure-cliffs-56160.herokuapp.com/
+
+#
+#
+#
+
+# Week 5 Challenge
+### Adding User Authentication
+#
+##### As the weekend challenge of the 5th week of the Craft Academy coding bootcamp we are asked to add a User Authentication feature to our Article App.
+
+### Additional features:
+
+- Unregistered visitor can only see index page
+- Visitor can sign up
+- Visitor can log in
+- Visitor can log out
+- Articles now belong to a specific user, and when they are published we can see the author
+- Users can only edit, update or delete their own articles
+
+To see these features consult the user-authentication branch
+
+PR Link: https://github.com/pedrocbras/rails_bdd/pull/1
